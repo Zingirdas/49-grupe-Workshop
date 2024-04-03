@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.randomHexContainer {
+    width: 40rem;
+    border: 1 px solid black;
+    padding: 1rem;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.randomHexContainer>* {
+    margin-bottom: 2rem;
+}
+
+.hexCode {
+    font-size: 2rem;
+    border: 1px solid white;
+    padding: 0px 1rem;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.generate {
+    padding: 10px 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
