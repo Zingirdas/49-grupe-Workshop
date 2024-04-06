@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
+}
+
+.purple {
+    background-color: #60267F;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+    border: 1px;
+}
+
+.learnMore {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+}
+
+.mainHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.mainHeaderContainer img {
+    width: 150px;
+}
+
+
+.mainHeaderList * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #2B0236;
+}
+
+.mainHeaderContainer button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #9A54BC;
+    border-radius: 5px;
+    color: #9A54BC;
+    cursor: pointer;
+}
+
+.mainHeaderContainer button:hover {
+    background-color: #9A54BC;
+    color: white;
+}
+
+.topHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.topHeaderContainer h1 {
+    font-size: 45px;
+    color: #2B0236;
+
+}
+
+.topHeaderContainer button {
+    padding: 15px 30px;
+    background-color: #9A54BC;
+    border: none;
+    border: 1.5px solid #9A54BC;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.topHeaderContainer button:hover {
+    background-color: white;
+    color: #9A54BC;
+}
+
+.elipseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.absolute {
+    position: absolute;
+    top: 100px;
+}
+
+.bigEllipse {
+    width: 500px;
+
+}
+
+.smallEllipse {
+    top: 120px;
+    width: 300px;
+}
+
+.phone {
+    top: 130px;
+    width: 150px;
+}
+
+.imageInElipse {
+    top: 230px;
+}
+
+.btnInElipse {
+    top: 470px;
+    padding: 10px 15px;
+    background-color: white;
+    border: none;
+    border: 2px solid #9A54BC;
+    border-radius: 5px;
+    color: #9A54BC;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btnInElipse:hover {
+    background-color: #9A54BC;
+    color: white;
+}
