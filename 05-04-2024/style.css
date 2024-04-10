@@ -179,6 +179,64 @@ header {
 
 .howHelpContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: flex-start;
+    margin-top: 8rem;
+}
+
+.paraContainer {
+    width: 30rem;
+    height: 27rem;
+
+}
+
+.howHelpBtnContainer {
+    width: 100%;
+    background-color: white;
+    padding: 0.2rem;
+    box-shadow: 0px 5px 7px 1px rgba(8, 8, 8, 0.15);
+    /* -webkit-box-shadow: 0px 5px 0px 1px rgba(8, 8, 8, 0.05); */
+    /* -moz-box-shadow: 0px 1px 1px 1px rgba(8, 8, 8, 0.05); */
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.howHelpBtnContainer button {
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    border: 2px solid white;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.howHelpBtnContainer button:hover {
+    background-color: #60267F;
+    color: white;
+    border: solid 2px #9A54BC;
+    border-radius: 5px;
+}
+
+.howHelpAllTextContainer {
+    width: 95%;
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.5rem auto;
+    flex-direction: column;
+    height: 100%;
+    font-size: 12.5px;
+}
+
+.howHelpAllTextContainer p {
+    padding: 1.5rem;
+    background-color: #F2F2F2;
+}
+
+.imgContainer img {
+    width: 16rem;
 }
