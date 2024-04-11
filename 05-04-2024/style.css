@@ -253,6 +253,8 @@ header {
     align-items: center;
     flex-direction: column;
     gap: 50px;
+    width: min-content;
+    margin-left: 140px;
 }
 
 .videoMainContainer p {
@@ -270,6 +272,7 @@ header {
 }
 
 .projectDoneCardsContainer {
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,6 +280,7 @@ header {
 }
 
 .card {
+    width: 30%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -289,9 +293,49 @@ header {
 }
 
 .card img {
-    width: 400px;
+    width: 100%;
 }
 
 .card p {
     color: #60267F;
+}
+
+.bigCardsContainer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bigCardsTopPara {
+    color: #A79D9D;
+    margin-top: 15px;
+}
+
+.monthlyYearContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    gap: 10px;
+}
+
+.monthly {
+    color: #A79D9D;
+}
+
+.monthlyYearContainer img {
+    width: 35px;
+}
+
+.yearly {
+    font-weight: 500;
+}
+
+.discount {
+    font-size: 12px;
+    background-color: #FFE87A;
+    padding: 3px 4px;
+    border-radius: 5px;
 }
