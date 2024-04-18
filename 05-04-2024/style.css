@@ -265,7 +265,7 @@ header {
     flex-direction: column;
     gap: 50px;
     width: min-content;
-    margin-left: 180px;
+    margin-left: 400px;
 }
 
 .videoMainContainer p {
