@@ -9,6 +9,17 @@ h2 {
     font-size: 36px;
 }
 
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+
 header {
     box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(8, 8, 8, 0.29);
@@ -439,14 +450,19 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 500px;
     gap: 10px;
 }
+
+.starsRoundFaceContainer img {
+    width: 70px;
+}
+
 
 .starsPara::before {
     font-family: "bootstrap-icons";
     content: "\F12C";
-    font-size: 90px;
+    font-size: 60px;
     margin-right: 160px;
     cursor: pointer;
 }
@@ -454,7 +470,112 @@ header {
 .starsPara::after {
     font-family: "bootstrap-icons";
     content: "\F135";
-    font-size: 90px;
+    font-size: 60px;
     margin-left: 160px;
     cursor: pointer;
+}
+
+.snakeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+    text-align: center;
+
+}
+
+.snakeContainer button {
+    padding: 10px 20px;
+    background-color: #9A54BC;
+    border: none;
+    border: 1px solid #9A54BC;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.snakeContainer button:hover {
+    background-color: white;
+    color: #9A54BC;
+}
+
+.snakeImgContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 900px;
+
+
+}
+
+.snakeImgContainer img {
+    position: absolute;
+    margin-top: -80px;
+}
+
+.line {
+    position: relative;
+    min-width: 1000px;
+    margin-top: 200px;
+
+}
+
+.face1 {
+    top: -125px;
+    left: -112px;
+    width: 100px;
+}
+
+.face2 {
+    top: 31px;
+    left: 30px;
+    width: 100px;
+}
+
+.face3 {
+    top: 4px;
+    left: 201px;
+    width: 100px;
+}
+
+.face4 {
+    top: 75px;
+    left: 336px;
+    width: 100px;
+}
+
+.face5 {
+    top: 91px;
+    right: 304px;
+    width: 100px;
+}
+
+.face6 {
+    top: 65px;
+    right: 140px;
+    width: 100px;
+}
+
+.face7 {
+    top: 91px;
+    right: -22px;
+    width: 100px;
+}
+
+.face8 {
+    top: -11px;
+    right: -87px;
+    width: 100px;
+}
+
+.you {
+    top: -21px;
+    right: 71px;
+    width: 40px;
 }
