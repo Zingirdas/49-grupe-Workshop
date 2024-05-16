@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+
+    }
+
+
+    .flex1 {
+        /* height: 300px; */
+        background-color: aquamarine;
+        color: white;
+        grid-column: span 2;
+    }
+
+    .flex2 {
+        /* height: 300px; */
+        background-color: rgb(62, 144, 117);
+        color: white;
+        grid-row: span 2;
+    }
+
+    .flex3 {
+        /* height: 300px; */
+        background-color: rgb(62, 57, 156);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+
+    /* grid-template-columns: auto 400px minmax(200px, 500px);
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-auto-rows: 50px; */
+
+
+
+    /* display: grid;
+        grid-template-columns: repeat(8, 3fr);
+        grid-template-rows: 1fr;
+        column-gap: 10px;
+        row-gap: 50px;
+
+    } */
+
+    /* .white {
+        height: 100px;
+        background-color: white;
+        border: 1px solid black;
+    } */
+
+    /* .black {
+
+        height: 300px;
+        background-color: black;
+        border: 3px solid white;
+        color: white; */
+</style>
+
+<body>
+    <div class="container">
+        <div class="flex1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae optio voluptas quia voluptates dicta ab delectus praesentium nostrum. Incidunt inventore repudiandae iure labore quod? Molestias harum laborum quasi totam accusamus.</p>
+        </div>
+        <div class="flex2">
+            <h1>Pavyzdys</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, reiciendis aspernatur! Exercitationem dignissimos hic saepe? Excepturi fugit quo enim corporis vitae, consectetur voluptatem cupiditate illum minima saepe provident? Libero, repudiandae.</p>
+        </div>
+        <div class="flex3">
+            <h2>Labas pasauli</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas, sapiente praesentium nemo, ab fugiat adipisci unde at repellendus deserunt provident est perferendis aperiam impedit obcaecati, similique voluptas? Repellat, doloribus.</p>
+            <span>trecias</span>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="gridItem">
+            <p>width expands to fill space</p>
+        </div>
+        <div class="gridItem">
+            <p>400px wide</p>
+        </div>
+        <div class="gridItem">
+            <p>min 200px max 500px wide</p>
+        </div>
+        <div class="gridItem">
+            <p>width expands to fill space</p>
+        </div>
+        <div class="gridItem">
+            <p>400px wide</p>
+        </div>
+        <div class="gridItem">
+            <p>min 200px max 500px wide</p>
+        </div>
+        <div class="gridItem">
+            <p>width expands to fill space</p>
+        </div>
+        <div class="gridItem">
+            <p>400px wide</p>
+        </div>
+        <div class="gridItem">
+            <p>min 200px max 500px wide</p>
+        </div>
+        <div class="gridItem">
+            <p>50px high</p>
+        </div>
+    </div> -->
+
+    <!-- <div class="container">
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis provident modi quae ducimus nulla deserunt doloribus? Eum architecto, illo autem saepe in ullam nulla minima aliquam animi nemo repudiandae dicta hic, perspiciatis aut magni inventore, delectus sed ab dolores cumque tempora reprehenderit? Adipisci, accusamus laborum voluptatem maiores, quidem facere animi saepe aspernatur autem ab illo reprehenderit praesentium aperiam corporis. Molestias nam quod modi ipsa magni similique esse quibusdam facilis sunt maiores natus reiciendis optio adipisci sapiente tempora cumque nulla, et doloremque nostrum dolores dicta. Dicta ab voluptas aperiam qui perferendis pariatur molestias a. Voluptatem optio vitae quaerat velit quis.</p>
+        </div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis provident modi quae ducimus nulla deserunt doloribus? Eum architecto, illo autem saepe in ullam nulla minima aliquam animi nemo repudiandae dicta hic, perspiciatis aut magni inventore, delectus sed ab dolores cumque tempora reprehenderit? Adipisci, accusamus laborum voluptatem maiores, quidem facere animi saepe aspernatur autem ab illo reprehenderit praesentium aperiam corporis. Molestias nam quod modi ipsa magni similique esse quibusdam facilis sunt maiores natus reiciendis optio adipisci sapiente tempora cumque nulla, et doloremque nostrum dolores dicta. Dicta ab voluptas aperiam qui perferendis pariatur molestias a. Voluptatem optio vitae quaerat velit quis.</p>
+        </div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis provident modi quae ducimus nulla deserunt doloribus? Eum architecto, illo autem saepe in ullam nulla minima aliquam animi nemo repudiandae dicta hic, perspiciatis aut magni inventore, delectus sed ab dolores cumque tempora reprehenderit? Adipisci, accusamus laborum voluptatem maiores, quidem facere animi saepe aspernatur autem ab illo reprehenderit praesentium aperiam corporis. Molestias nam quod modi ipsa magni similique esse quibusdam facilis sunt maiores natus reiciendis optio adipisci sapiente tempora cumque nulla, et doloremque nostrum dolores dicta. Dicta ab voluptas aperiam qui perferendis pariatur molestias a. Voluptatem optio vitae quaerat velit quis.</p>
+        </div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis provident modi quae ducimus nulla deserunt doloribus? Eum architecto, illo autem saepe in ullam nulla minima aliquam animi nemo repudiandae dicta hic, perspiciatis aut magni inventore, delectus sed ab dolores cumque tempora reprehenderit? Adipisci, accusamus laborum voluptatem maiores, quidem facere animi saepe aspernatur autem ab illo reprehenderit praesentium aperiam corporis. Molestias nam quod modi ipsa magni similique esse quibusdam facilis sunt maiores natus reiciendis optio adipisci sapiente tempora cumque nulla, et doloremque nostrum dolores dicta. Dicta ab voluptas aperiam qui perferendis pariatur molestias a. Voluptatem optio vitae quaerat velit quis.</p>
+        </div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis provident modi quae ducimus nulla deserunt doloribus? Eum architecto, illo autem saepe in ullam nulla minima aliquam animi nemo repudiandae dicta hic, perspiciatis aut magni inventore, delectus sed ab dolores cumque tempora reprehenderit? Adipisci, accusamus laborum voluptatem maiores, quidem facere animi saepe aspernatur autem ab illo reprehenderit praesentium aperiam corporis. Molestias nam quod modi ipsa magni similique esse quibusdam facilis sunt maiores natus reiciendis optio adipisci sapiente tempora cumque nulla, et doloremque nostrum dolores dicta. Dicta ab voluptas aperiam qui perferendis pariatur molestias a. Voluptatem optio vitae quaerat velit quis.</p>
+        </div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis provident modi quae ducimus nulla deserunt doloribus? Eum architecto, illo autem saepe in ullam nulla minima aliquam animi nemo repudiandae dicta hic, perspiciatis aut magni inventore, delectus sed ab dolores cumque tempora reprehenderit? Adipisci, accusamus laborum voluptatem maiores, quidem facere animi saepe aspernatur autem ab illo reprehenderit praesentium aperiam corporis. Molestias nam quod modi ipsa magni similique esse quibusdam facilis sunt maiores natus reiciendis optio adipisci sapiente tempora cumque nulla, et doloremque nostrum dolores dicta. Dicta ab voluptas aperiam qui perferendis pariatur molestias a. Voluptatem optio vitae quaerat velit quis.</p>
+        </div>
+        <div class="black"></div>
+        <div class="black"></div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+    </div> -->
+
+
+
+
+
+</body>
+
+</html>

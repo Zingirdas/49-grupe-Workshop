@@ -1,0 +1,598 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
+}
+
+header {
+    border-bottom: 10px solid #444;
+    position: relative;
+    height: 700px;
+}
+
+.absolute-header-con {
+    position: absolute;
+    width: auto;
+    filter: brightness(35%);
+    width: 100%;
+    height: 100%;
+    height: 700px;
+    inset: 0;
+    /* background: url('https://assets.nflxext.com/ffe/siteui/vlv3/c7f07b68-7989-4ff7-a31e-11c17dcc2fea/cac45ca6-43be-4f03-9dea-19d0bf82934f/LT-en-20240422-popsignuptwoweeks-perspective_alpha_website_medium.jpg');*/
+    overflow: hidden;
+}
+
+
+
+.top-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.top-header>img {
+    width: 160px;
+}
+
+.t-header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    position: relative;
+}
+
+.t-header-buttons>img {
+    position: absolute;
+    left: 10px;
+}
+
+.t-header-buttons select {
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background: #66666631;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.t-header-buttons select:focus {
+    border: 2px solid #fff;
+}
+
+.t-header-buttons select>option {
+    color: #000;
+}
+
+.t-header-buttons a {
+    text-decoration: none;
+    font-size: 15px;
+    background: #ff0000;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+.t-header-buttons a:hover {
+    background: #cc0000;
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 190px;
+}
+
+.bottom-header h1 {
+    font-weight: 900;
+    color: #fff;
+    font-size: 48px;
+}
+
+.bottom-header>span {
+    font-size: 22px;
+    color: #fff;
+}
+
+.b-header-get-started {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.b-header-get-started p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.b-header-get-started-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.b-header-get-started-form label {
+    position: absolute;
+    color: #ddd;
+    left: 20px;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    font-size: 15px;
+}
+
+.b-header-get-started-form input {
+    width: 350px;
+    height: 55px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: 1px solid #999;
+    background: #0000005b;
+    color: #fff;
+    position: relative;
+    top: 2px;
+    padding-top: 10px;
+}
+
+.b-header-get-started-form input:focus+label {
+    position: absolute;
+    transform: translate(0%, -75%);
+    font-size: 12px;
+}
+
+.b-header-get-started-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 55px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    font-size: 23px;
+    border: none;
+    background: #ff0000;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.b-header-get-started-form button:hover {
+    background: #cc0000;
+}
+
+.b-header-get-started-form button>span {
+    position: absolute;
+    left: 20px;
+}
+
+.b-header-get-started-form button>img {
+    position: absolute;
+    right: 20px;
+}
+
+.b-header-get-started-form>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    left: 3px;
+    top: 65px;
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+
+
+/* enjoy on tv */
+
+
+.enjoy-on-tv {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.enjoy-on-tv h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.enjoy-on-tv p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+    font-weight: 400
+}
+
+.devices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.devices video {
+    width: 100%;
+}
+
+.tv-animation {
+    position: absolute;
+    z-index: 1;
+    animation: tvAnimation 4s infinite alternate;
+}
+
+.tv-animation img {
+    width: 100%;
+}
+
+
+.video {
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: contain;
+    overflow: clip;
+}
+
+
+/*  Watch everywhere */
+
+
+
+
+.container4 {
+    border-top: 10px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    background-color: black;
+    z-index: 3;
+    gap: 100px;
+
+}
+
+.watchContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 20px;
+
+}
+
+.watchContainer h2 {
+
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.watchContainer p {
+    color: white;
+    font-size: 25px;
+}
+
+.monitor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.monitor iframe {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: px;
+}
+
+
+.monitor .phone {
+    position: absolute;
+    z-index: 4;
+    top: 212px;
+    right: 403px;
+
+
+}
+
+.monitor .ipad {
+    position: absolute;
+    z-index: 3;
+    top: 145px;
+    left: 342px;
+}
+
+
+
+
+/*  create profiles everywhere */
+
+
+.createProfilesContainer {
+    border-top: 10px solid #444;
+    width: 100%;
+    height: 700px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.kidsImg {
+    display: flex;
+    margin-right: 0px;
+
+}
+
+.cerateProfiles {
+    color: white;
+
+}
+
+.cerateProfiles p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.cerateProfiles h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.brake {
+    background-color: #444444;
+    height: 10px;
+    border: none;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    background-color: #000000;
+    height: 500px;
+    list-style-type: none;
+
+}
+
+.footerContainer ul {
+    margin-left: 200px;
+}
+
+
+.footerContainer li {
+    margin-bottom: 20px;
+
+}
+
+.footerContainer li a {
+    color: #bababa;
+}
+
+.button {
+    margin-bottom: 20px;
+
+}
+
+.language {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 7px 30px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: solid 0.1px;
+    outline: none;
+    position: absolute;
+
+}
+
+.language:hover {
+    border: solid 3px;
+}
+
+.aRef {
+    margin-top: 75px;
+}
+
+
+/* freq questions */
+
+.line {
+    height: 10px;
+    background-color: rgb(35, 35, 35);
+}
+
+.faq-container {
+    background-color: #000;
+}
+
+.faq {
+    width: 75%;
+    margin: 0 auto;
+    color: #fff;
+    background: #000;
+}
+
+.faq h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.accordion__intro {
+    background-color: rgb(45, 45, 45);
+    padding: 25px;
+    cursor: pointer;
+}
+
+
+.accordion__intro p {
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+
+.accordion__intro:hover {
+    background-color: rgb(65, 65, 65);
+    transition: 0.5s;
+}
+
+.accordion__content {
+    background-color: rgb(45, 45, 45);
+    padding: 25px;
+    display: none;
+    margin-top: 1px;
+
+}
+
+.accordion__content p {
+    font-size: 1.5rem;
+
+}
+
+.accordion__intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.click {
+    width: 30px;
+    height: 30px;
+}
+
+.accordion__active {
+    display: block;
+
+}
+
+.get-started {
+
+
+    margin: 50px auto 80px;
+}
+
+.get-started h3 {
+    text-align: center;
+}
+
+.get-started input {
+    padding: 20px;
+    background-color: rgb(15, 15, 15);
+    width: 350px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.enter-email {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.get-started-btn {
+    width: 200px;
+    background-color: rgb(229, 9, 20);
+    padding: 15px;
+    border: 1px solid rgb(229, 9, 20);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* paskutinis strichas */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\002B';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 33px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\0078";
+    font-size: 33px;
+    /* Unicode character for "minus" sign (-) */
+}
